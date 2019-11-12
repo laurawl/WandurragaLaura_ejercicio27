@@ -32,6 +32,15 @@ float *arreglo1 = NULL;
 arreglo1 =new float[div];
 implicita(y0,deltaw,arreglo1,div);
 escribe("datos1.dat",arreglo1,div);
+	
+deltaw=0.01;
+delta= deltaw/w;
+div=intera/delta;
+y0=1;
+float *arreglo2 = NULL;
+arreglo2 =new float[div];
+implicita(y0,deltaw,arreglo2,div);
+escribe("datos2.dat",arreglo2,div);
 return 0;
 }
 
